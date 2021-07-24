@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+    font-family: "QuickSand", sans-serif;
+}
+
+/* body{
+    background-color: #F5F4F4;
+} */
+
+#root{
+    max-width: 1673px;
+    margin: 0 auto;
+}
