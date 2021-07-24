@@ -1,0 +1,45 @@
+.hide{
+    visibility: hidden;
+    height:0;
+}
+
+.show{
+    visibility: visible;
+}
+
+.SearchForm .SearchForm-input{
+    margin-top: 10px;
+    width: 100%;
+    max-width: 400px;
+    padding-left: 30px;
+    padding-top: 10px;
+    padding-right: 30px;
+    padding-bottom:10px;
+    font-size: 1.5em;
+    font-family: "QuickSand" sans-serif;
+    outline: none;
+    border: 2px solid #111D5E;
+    border-radius: 100px;
+    background: #F5F4F4;
+    transition: all 0.25s;
+}
+
+
+.SearchForm .Input{
+    position: relative;
+}
+
+.SearchForm  .Input .fa-search{
+    font-size: 2rem;
+    color:#111D5E;
+    position: absolute;
+    top: 20px;
+    left: 10px;
+} 
+
+.SearchForm .SearchForm-input::placeholder{
+    color:darkgray;
+    font-weight: 50;
+} 
+
+
