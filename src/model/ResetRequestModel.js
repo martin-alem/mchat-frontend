@@ -15,7 +15,7 @@ class ResetRequestModel {
 
     static async resendAPI(data) {
 
-        const url = "https://mchat-reset-gxzxc.ondigitalocean.app/reset/resend";
+        const url = "https://mchat-reset-gxzxc.ondigitalocean.app/reset/verify/resend";
         const method = "POST";
 
         const response = await Fetch.makeRequest(url, method, data);

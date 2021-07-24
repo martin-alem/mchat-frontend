@@ -15,7 +15,7 @@ class VerificationModel {
 
     static async resendAPI(data) {
 
-        const url = "https://mchat-signup-yfv5q.ondigitalocean.app/signup/resend";
+        const url = "https://mchat-signup-yfv5q.ondigitalocean.app/signup/verify/resend";
         const method = "POST";
 
         const response = await Fetch.makeRequest(url, method, data);
