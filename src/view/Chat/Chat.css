@@ -1,0 +1,80 @@
+.Chat .Container{
+    font-family: "QuickSand" sans-serif;
+    background-color: #F5F4F4;
+    width: 500px;
+    height: 100px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.hidden{
+    display: none;
+    height: 0;
+    width: 0;
+}
+
+.Chat .Container .InnerContainer{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.Chat .Container .Checkbox input[type="checkbox"]{
+    appearance:none;
+    height: 20px;
+    width: 20px;
+    background-color: #FFFF;
+    border-radius: 100px;
+    border: 1px solid #111D5E;
+    cursor: pointer;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.Chat .Container .Checkbox input[type="checkbox"]:checked{
+    background-color: #111D5E;
+}
+
+.Chat .Container .Image .Avatar{
+    margin-right: 10px;
+    width: 80px;
+    height: 80px;
+    border-radius:50%;
+}
+
+.Chat .Container .Title h3{
+    font-family: "QuickSand" sans-serif;
+    font-weight: 900;
+    font-size: large;
+}
+
+
+.Chat .Container .Title p{
+    font-size: 12px;
+}
+
+.Chat .Container .Info{
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Chat .Container .Info .Notification{
+    width:30px;
+    height:30px;
+    border-radius: 100px;
+    margin-top:10px;
+    background-color: #FFFF;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    color: #111D5E;
+    font-weight: 600;
+    font-size: 12px;
+}

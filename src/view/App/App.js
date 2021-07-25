@@ -9,12 +9,11 @@ import Setup from "../Setup/Setup";
 import PasswordReset from "../PasswordReset/PasswordReset";
 import ResetRequest from "../ResetRequest/ResetRequest";
 import ChangePassword from "../ChangePassword/ChangePassword";
-import SearchFrom from "../SearchForm/SearchForm";
+import Chat from "../Chat/Chat";
 
 class App extends PureComponent {
   constructor(props) {
     super(props);
-
     this.state = {
     };
   }
@@ -22,7 +21,7 @@ class App extends PureComponent {
   render() {
     return (
       <div className="App">
-        <SearchFrom />
+        <Chat />
         <Switch>
           <Route exact path="/" component={Login} />
           <Route exact path="/signup" component={Signup} />
