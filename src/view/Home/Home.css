@@ -1,0 +1,62 @@
+.Home{
+    background-color: #FFFF;
+    max-width: 518px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.Home .Header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top:5px;
+    padding-right: 20px;
+    padding-left:20px;
+    margin-bottom: 20px;
+}
+
+.Home .Header p{
+    font-size: 30px;
+    color: #111D5E;
+}
+
+.Home .Heading{
+    padding-right: 20px;
+    padding-left:20px;
+}
+
+.Home .Heading h1{
+    text-align: left;
+    font-size: 60px;
+    color: #111D5E;
+    margin-bottom: 20px;
+}
+
+.Home .SearchForm{
+    text-align:left;
+    padding-right: 10px;
+    padding-left:10px;
+    margin-bottom: 40px;
+}
+
+.Home .Chats{
+    padding-right: 10px;
+    padding-left:10px;
+    height: 400px;
+    overflow-y: scroll;
+}
+
+.Home .Nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #faf8f8;
+    margin-top: 20px;
+    position:sticky;
+    padding: 20px;
+}
+
+.Home .Nav p{
+    font-size: 30px;
+    color: #111D5E;
+}

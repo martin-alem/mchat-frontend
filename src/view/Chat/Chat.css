@@ -1,13 +1,15 @@
 .Chat .Container{
     font-family: "QuickSand" sans-serif;
     background-color: #F5F4F4;
-    width: 500px;
+    width: 100%;
     height: 100px;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
+    margin-top:20px;
+    margin-bottom: 5px;
 }
 
 .hidden{

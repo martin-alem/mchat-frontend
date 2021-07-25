@@ -9,7 +9,7 @@ import Setup from "../Setup/Setup";
 import PasswordReset from "../PasswordReset/PasswordReset";
 import ResetRequest from "../ResetRequest/ResetRequest";
 import ChangePassword from "../ChangePassword/ChangePassword";
-import Chat from "../Chat/Chat";
+import Home from "../Home/Home";
 
 class App extends PureComponent {
   constructor(props) {
@@ -21,9 +21,8 @@ class App extends PureComponent {
   render() {
     return (
       <div className="App">
-        <Chat />
         <Switch>
-          <Route exact path="/" component={Login} />
+          <Route exact path="/" component={Home} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/reset" component={PasswordReset} />
           <ProtectedRoute path="/verification" component={Verification} redirectTo="/signup" token="isSignedUp" />
