@@ -58,13 +58,13 @@
 
 .Chat .Container .Title p{
     font-size: 12px;
+    text-align:left;
 }
 
 .Chat .Container .Info{
     display:flex;
     flex-direction:column;
     justify-content: center;
-    align-items: center;
 }
 
 .Chat .Container .Info .Notification{

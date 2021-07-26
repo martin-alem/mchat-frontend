@@ -1,0 +1,41 @@
+.Friends{
+    background-color: #FFFF;
+    max-width: 518px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+}
+
+.hide{
+    visibility: hidden;
+}
+
+.Friends .Header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-bottom: 20px;
+}
+
+.Friends .Header p{
+    font-size: 20px;
+    font-weight:bold;
+    color: #111D5E;
+}
+
+.Friends .Heading h1{
+    text-align: left;
+    font-size: 60px;
+    color: #111D5E;
+    margin-bottom: 20px;
+}
+
+.Friends .SearchForm{
+    text-align:left;
+    margin-bottom: 20px;
+}
+
+.Friends .FriendList{
+    height: 700px;
+    overflow-y: scroll;
+}

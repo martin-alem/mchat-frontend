@@ -25,6 +25,7 @@ class Friend extends PureComponent {
                         </div>
                     </div>
                 </div>
+                <hr />
             </div>
         )
     }

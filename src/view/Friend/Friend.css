@@ -1,6 +1,5 @@
 .Friend .Container{
     font-family: "QuickSand" sans-serif;
-    background-color: #F5F4F4;
     width: 100%;
     height: 100px;
     display:flex;
@@ -22,7 +21,7 @@
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
-    align-items: center;
+    align-items: center
 }
 
 .Friend .Container .Image .Avatar{
@@ -41,4 +40,5 @@
 
 .Friend .Container .Title p{
     font-size: 12px;
+    text-align: left;
 }
