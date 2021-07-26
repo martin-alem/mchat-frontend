@@ -23,13 +23,16 @@ class App extends PureComponent {
     return (
       <div className="App">
         <Switch>
-          <Route exact path="/" component={Friends} />
+          <Route exact path="/" component={Login} />
           <Route exact path="/signup" component={Signup} />
           <Route exact path="/reset" component={PasswordReset} />
           <ProtectedRoute path="/verification" component={Verification} redirectTo="/signup" token="isSignedUp" />
           <ProtectedRoute exact path="/setup" component={Setup} redirectTo="/signup" token="isVerified" />
           <ProtectedRoute exact path="/reset_request" component={ResetRequest} redirectTo="/reset" token="isRequest" />
           <ProtectedRoute exact path="/change_password" component={ChangePassword} redirectTo="/reset" token="isRequestVerified" />
+
+          <Route exact path="/home" component={Home} />
+          <Route exact path="/home/friends" component={Friends} />
           <Route component={Login} />
         </Switch>
       </div>

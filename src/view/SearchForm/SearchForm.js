@@ -37,7 +37,7 @@ class SearchForm extends PureComponent {
             <div className="SearchForm">
                 <form onSubmit={this.handleSubmit}>
                     <div className="Input">
-                        <input type="text" value={this.state.query} placeholder="Search Chat" name="query" className="SearchForm-input" onChange={this.handleChange} />
+                        <input type="text" value={this.state.query} placeholder="Search" name="query" className="SearchForm-input" onChange={this.handleChange} />
                         <i className="fas fa-search"></i>
                     </div>
                 </form>

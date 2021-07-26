@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from "react-router-dom";
 import Friend from "../Friend/Friend";
 import SearchForm from "../SearchForm/SearchForm";
 import "./Friends.css"
@@ -16,7 +17,7 @@ class Friends extends PureComponent {
         return (
             <div className="Friends">
                 <div className="Header">
-                    <p className="Edit">Cancel</p>
+                    <p className="Edit"><Link to="/home">Cancel</Link></p>
                 </div>
                 <div className="Heading">
                     <h1>Friends</h1>

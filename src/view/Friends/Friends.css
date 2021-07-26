@@ -17,10 +17,11 @@
     margin-bottom: 20px;
 }
 
-.Friends .Header p{
+.Friends .Header p, a{
     font-size: 20px;
     font-weight:bold;
     color: #111D5E;
+    text-decoration: none;
 }
 
 .Friends .Heading h1{

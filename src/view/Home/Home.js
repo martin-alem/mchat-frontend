@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from "react-router-dom";
 import SearchForm from '../SearchForm/SearchForm';
 import Chat from '../Chat/Chat';
 import "./Home.css";
@@ -43,7 +44,7 @@ class Home extends PureComponent {
             <div className="Home">
                 <div className="Header">
                     <p onClick={this.handleEdit} className="Edit"><i className="fas fa-edit"></i></p>
-                    <p className="NewChat"><i className="fas fa-comment-medical"></i></p>
+                    <p className="NewChat"><Link to="home/friends"><i className="fas fa-comment-medical"></i></Link></p>
                 </div>
                 <div className="Heading">
                     <h1>Chats</h1>
