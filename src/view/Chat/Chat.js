@@ -1,4 +1,5 @@
 import React, { PureComponent } from 'react';
+import { Link } from "react-router-dom";
 import avatar from "../../img/avatar.jpg";
 import "./Chat.css"
 
@@ -36,10 +37,12 @@ class Chat extends PureComponent {
                         <div className="Image">
                             <img src={avatar} alt="User image" className="Avatar" />
                         </div>
-                        <div className="Title">
-                            <h3>Adjyannah West</h3>
-                            <p>Hello! how are you...</p>
-                        </div>
+                        <Link to="/home/room">
+                            <div className="Title">
+                                <h3>Adjyannah West</h3>
+                                <p>Hello! how are you...</p>
+                            </div>
+                        </Link>
                     </div>
                     <div className="Info">
                         <h3>Monday</h3>

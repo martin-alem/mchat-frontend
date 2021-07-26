@@ -60,11 +60,6 @@ class Home extends PureComponent {
                 <hr />
                 <div className="Chats">
                     <Chat edit={this.state.edit} />
-                    <Chat edit={this.state.edit} />
-                    <Chat edit={this.state.edit} />
-                    <Chat edit={this.state.edit} />
-                    <Chat edit={this.state.edit} />
-                    <Chat edit={this.state.edit} />
                 </div>
                 <div className="Nav">
                     <p className="camera"><i className="fas fa-camera"></i></p>

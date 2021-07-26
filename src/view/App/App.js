@@ -11,6 +11,7 @@ import ResetRequest from "../ResetRequest/ResetRequest";
 import ChangePassword from "../ChangePassword/ChangePassword";
 import Home from "../Home/Home";
 import Friends from "../Friends/Friends";
+import ChatRoom from "../ChatRoom/ChatRoom";
 
 class App extends PureComponent {
   constructor(props) {
@@ -33,6 +34,7 @@ class App extends PureComponent {
 
           <Route exact path="/home" component={Home} />
           <Route exact path="/home/friends" component={Friends} />
+          <Route exact path="/home/room" component={ChatRoom} />
           <Route component={Login} />
         </Switch>
       </div>

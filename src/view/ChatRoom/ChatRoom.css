@@ -1,0 +1,60 @@
+.ChatRoom{
+    background-color: #FFFF;
+    max-width: 518px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.ChatRoom .Header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    margin-top: 15px;
+    margin-left: 10px;
+    margin-right: 10px;
+    
+}
+
+.ChatRoom .Header .Info{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.ChatRoom .Header .Info .Image{
+    width: 40px;
+    height: 40px;
+    border-radius:50%
+}
+
+.ChatRoom .Header .Info .LastName a{
+    font-size:15px;
+}
+
+.ChatRoom .Header .Info > .info:not(:last-child){
+    margin-right: 10px;
+    color: #111D5E;
+}
+
+.ChatRoom .Header .Call{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.ChatRoom .Header .Call > .call{
+
+    font-size: 20px;
+    color: #111D5E;
+}
+
+.ChatRoom .Header .Call > .call:nth-child(odd){
+
+    margin-right: 30px;
+}
+
+.ChatRoom .Message-Container{
+
+    height: 600px;
+    background-color:#F5F4F4
+}
