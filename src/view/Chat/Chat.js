@@ -12,6 +12,10 @@ class Chat extends PureComponent {
         this.handleChange = this.handleChange.bind(this);
     }
 
+    static defaultProps = {
+        edit: false
+    }
+
     handleChange(event) {
         if (event.target.checked) {
             console.log(event.target.value)
@@ -26,7 +30,7 @@ class Chat extends PureComponent {
             <div className="Chat">
                 <div className="Container">
                     <div className="InnerContainer">
-                        <div className="Checkbox hidden">
+                        <div className={this.props.edit ? "Checkbox" : "Checkbox hidden"}>
                             <input type="checkbox" value="true" name="checkbox" onChange={this.handleChange}></input>
                         </div>
                         <div className="Image">
