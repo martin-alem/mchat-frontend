@@ -1,0 +1,69 @@
+.hide{
+    visibility: hidden;
+    height:0;
+}
+
+.show{
+    visibility: visible;
+}
+
+.ChatBox .ChatBox-input{
+    margin-top: 10px;
+    width: 100%;
+    overflow: hidden;
+    padding-left: 15px;
+    padding-right:25px;
+    padding-top: 10px;
+    font-size: 1.5em;
+    font-family: "QuickSand" sans-serif;
+    outline: none;
+    border: 2px solid #111D5E;
+    border-radius: 100px;
+    background: #F5F4F4;
+    transition: all 0.25s;
+}
+
+
+.ChatBox .Input{
+    position: relative;
+}
+
+.ChatBox  .Input .fa-laugh{
+    font-size: 2rem;
+    color:#111D5E;
+    position: absolute;
+    top: 27px;
+    right: 10px;
+} 
+
+.ChatBox .ChatBox-input::placeholder{
+    color:darkgray;
+    font-weight: 50;
+} 
+
+.Chat{
+    display:flex;
+    justify-content:flex-start;
+    align-items: center;
+}
+
+.ChatBox .Input{
+    flex-grow: 100;
+}
+
+.ChatBox .Chat .fas{
+    font-size:30px;
+    color: #111D5E;
+}
+
+.ChatBox .Chat .fa-plus{
+    margin:0 10px;
+    z-index: 10;
+    cursor: pointer;
+}
+
+.ChatBox .Chat .fa-paper-plane, .fa-microphone-alt{
+    margin: 0 10px;
+}
+
+

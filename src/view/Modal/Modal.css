@@ -1,0 +1,38 @@
+.Modal{
+    background-color: #FFFF;
+    padding: 25px;
+    width: 300px;
+    height: 300px;
+}
+
+.Modal h2{
+    margin-bottom: 30px;
+    text-align: center;
+    color: #111D5E;
+    font-weight: 900;
+}
+
+.Modal .Items{
+    display:flex;
+    flex-direction:column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.Modal .Items > *:not(:last-child){
+    margin-bottom: 40px;
+}
+
+.Modal input[type="file"]{
+    display:none;
+}
+
+.Modal label{
+
+    background-color: #111E5D;
+    padding: 10px;
+    font-size: medium;
+    color: #F5F4F4;
+    border-radius: 3px;
+    cursor: pointer;
+}
