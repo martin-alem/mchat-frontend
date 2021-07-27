@@ -63,7 +63,7 @@ class Home extends PureComponent {
                 </div>
                 <div className="Nav">
                     <p className="camera"><i className="fas fa-camera"></i></p>
-                    <p className="Chat-Room"><i className="fas fa-comment-alt"></i></p>
+                    <p className="Chat-Room"><i class="fas fa-user-friends"></i></p>
                     <p className="Phone-Log"><i className="fas fa-phone-alt"></i></p>
                     <p className="Settings"><i className="fas fa-cog"></i></p>
                 </div>

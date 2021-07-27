@@ -13,6 +13,7 @@ import Home from "../Home/Home";
 import Friends from "../Friends/Friends";
 import ChatRoom from "../ChatRoom/ChatRoom";
 import Picture from "../Picture/Picture";
+import Info from "../Info/Info";
 
 class App extends PureComponent {
   constructor(props) {
@@ -37,6 +38,7 @@ class App extends PureComponent {
           <Route exact path="/home/friends" component={Friends} />
           <Route exact path="/home/room" component={ChatRoom} />
           <Route exact path="/home/picture" component={Picture} />
+          <Route exact path="/home/info" component={Info} />
           <Route component={Login} />
         </Switch>
       </div>

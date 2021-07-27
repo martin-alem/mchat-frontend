@@ -1,0 +1,51 @@
+.Detail{
+    max-width: 518px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.Detail .Header{
+    display:flex;
+    justify-content:flex-start;
+    background-color: #FFFF;
+    padding: 20px;
+}
+
+.Detail .Header > .info:not(:last-child){
+    margin-right: 10px;
+    color: #111D5E;
+}
+
+.Detail .Img{
+    height: 250px;
+    background-image: url(../../img/avatar.jpg);
+    background-position: center;
+}
+
+.Detail .Contact{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.Detail .Contact .Personal h1{
+    color: #111D5E
+}
+
+.Detail .Contact .Personal p{
+    font-size:15px;
+}
+
+.Detail .Contact .Links > *{
+    font-size:25px;
+    color: #111D5E
+}
+
+.Detail .Contact .Links > *:not(:last-child){
+    margin-right: 15px;
+}
+
+.Detail .General{
+    padding: 20px;
+}
