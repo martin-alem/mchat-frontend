@@ -11,6 +11,7 @@ class ChatBox extends PureComponent {
 
         this.handleChange = this.handleChange.bind(this);
         this.handleOpenOptions = this.handleOpenOptions.bind(this);
+        this.showEmoji = this.showEmoji.bind(this);
     }
 
     handleSubmit(event) {
@@ -31,6 +32,43 @@ class ChatBox extends PureComponent {
         this.props.openModal();
     }
 
+    emojiIcon() {
+
+        const input = document.querySelector(".ChatBox-input");
+        const root = document.querySelector(".Chat");
+        const picker = new EmojiButton({
+            rootElement: root,
+            autoHide: false,
+            position: "auto",
+            i18n: {
+                search: 'Search',
+                categories: {
+                    recents: 'Recently Used',
+                    smileys: 'Smileys & People',
+                    animals: 'Animals & Nature',
+                    food: 'Food & Drink',
+                    activities: 'Activities',
+                    travel: 'Travel & Places',
+                    objects: 'Objects',
+                    symbols: 'Symbols',
+                    flags: 'Flags'
+                },
+                notFound: 'No emojis found'
+            }
+        });
+
+        picker.on('emoji', emoji => {
+            input.value += emoji;
+        });
+
+        return [picker, root];
+    }
+
+    showEmoji() {
+        const [picker, input] = this.emojiIcon()
+        picker.pickerVisible ? picker.hidePicker : picker.showPicker(input);
+    }
+
     render() {
         return (
             <div className="ChatBox">
@@ -39,7 +77,7 @@ class ChatBox extends PureComponent {
                         <i onClick={this.handleOpenOptions} className="fas fa-plus"></i>
                         <div className="Input">
                             <textarea value={this.state.query} name="query" className="ChatBox-input" onChange={this.handleChange} ></textarea>
-                            <i className="far fa-laugh"></i>
+                            <i onClick={this.showEmoji} className="far fa-laugh"></i>
                         </div>
                         <i className="fas fa-paper-plane"></i>
                         <i className="fas fa-microphone-alt"></i>
