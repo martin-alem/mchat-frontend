@@ -29,7 +29,7 @@ class ChatRoom extends PureComponent {
                     <div className="Header">
                         <div className="Info">
                             <p className="Back info"><Link to="/home"><i className="fas fa-arrow-left"></i></Link></p>
-                            <div className="Img info"><Link to="/home/img/"><img className="Image" src={avatar} alt="Avatar" /></Link></div>
+                            <div className="Img info"><Link to="/home/picture/"><img className="Image" src={avatar} alt="Avatar" /></Link></div>
                             <h5 className="LastName info"><Link to="/home/info">Adjyannah</Link></h5>
                         </div>
                         <div className="Call">

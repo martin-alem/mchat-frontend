@@ -1,0 +1,31 @@
+.Picture{
+    max-width: 518px;
+    height: 600px;
+    margin: 0 auto;
+}
+
+.Picture .Header{
+    display:flex;
+    justify-content:flex-start;
+    background-color: #FFFF;
+    padding: 20px;
+}
+
+.Picture .Header > .info:not(:last-child){
+    margin-right: 10px;
+    color: #111D5E;
+}
+
+.Picture .Img{
+    background-color: #F5F4F4;
+    width: inherit;
+    height: inherit;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+.Picture .Img .Image{
+    width: 400px;
+    height: 400px;
+}
